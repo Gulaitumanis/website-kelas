@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    padding: 0 ;
+    margin: 0;
+}
+
+.home {
+    background-image: url(./gif\ bg.gif);
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    transition: 0.2s;
+}
+
+.navbar.sticky {
+    padding: 5px 40px;
+    background: black;
+    transition: all 0.2s linear;
+}
+
+.navbar img {
+    border-radius: 50%;
+}
+
+.navbar .logo {
+    color: rgb(13, 63, 13);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navmenu a {
+    position: relative;
+    right: 100px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navmenu a:hover {
+    color: blue;
+    transition: color 0.2s ease-in;
+}
+
+.navbar.sticky a::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    border-bottom: 2px solid white;
+}
+
+.navbar.sticky a:hover::before {
+    width: 30px;
+    transition: all 0.2s linear;
+}
+
+/* Gallery */
+
+.Gallery {
+    width: 100%;
+    height: 50%;
+}
